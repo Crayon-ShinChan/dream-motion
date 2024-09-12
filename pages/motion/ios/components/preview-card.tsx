@@ -3,11 +3,9 @@
 import { useEffect, useState, useRef } from "react";
 import { useOnClickOutside } from "usehooks-ts";
 import { motion } from "framer-motion";
-import { useConfig } from "nextra-theme-docs";
+import { useConfig, useTheme } from "nextra-theme-docs";
 
 export default function PreviewCard() {
-  const config = useConfig();
-  console.log(config);
   const [activeGame, setActiveGame] = useState(null);
   const ref = useRef(null);
   useOnClickOutside(ref, () => setActiveGame(null));
@@ -30,7 +28,7 @@ export default function PreviewCard() {
           <div className="overlay" />
           <div className="active-game">
             <motion.div
-              layoutId={activeGame.title}
+              layoutId={`card-${activeGame.title}`}
               className="inner"
               ref={ref}
               style={{ borderRadius: 12 }}
@@ -59,7 +57,7 @@ export default function PreviewCard() {
       <ul className="list">
         {GAMES.map((game) => (
           <motion.li
-            layoutId={game.title}
+            layoutId={`card-${game.title}`}
             key={game.title}
             onClick={() => setActiveGame(game)}
             style={{ borderRadius: 8 }}
