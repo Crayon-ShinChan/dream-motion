@@ -1,5 +1,5 @@
 {
-  "name": "visual-design",
+  "name": "visual-gallery",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,10 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^11.5.4",
     "next": "^14.2.9",
+    "nextra": "^2.13.4",
+    "nextra-theme-docs": "^2.13.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "nextra": "^2.13.4",
-    "nextra-theme-docs": "^2.13.4"
+    "usehooks-ts": "^3.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.11"
   }
 }

@@ -1,3 +1,8 @@
 {
-  "first": "First"
+  "index": "Introduction",
+  "---": {
+    "type": "separator",
+    "title": "Components"
+  },
+  "ios": "iOS Remake"
 }
