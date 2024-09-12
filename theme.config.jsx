@@ -8,10 +8,10 @@ export default {
     </div>
   ),
   project: {
-    link: "https://github.com/Crayon-ShinChan/visual-design",
+    link: "https://github.com/Crayon-ShinChan/visual-gallery",
   },
-  // docsRepositoryBase:
-  //   "https://github.com/Crayon-ShinChan/visual-design/tree/main/",
+  docsRepositoryBase:
+    "https://github.com/Crayon-ShinChan/visual-gallery/tree/main/",
   useNextSeoProps() {
     return {
       titleTemplate: "%s - Visual Gallery",
