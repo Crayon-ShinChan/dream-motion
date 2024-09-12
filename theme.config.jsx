@@ -1,7 +1,13 @@
 export default {
-  logo: <span>Dream Motion</span>,
+  logo: <span>Visual Design</span>,
   project: {
-    link: "https://github.com/shuding/nextra",
+    link: "https://github.com/Crayon-ShinChan/visual-design",
   },
-  // ... other theme options
+  // docsRepositoryBase:
+  //   "https://github.com/Crayon-ShinChan/visual-design/tree/main/",
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s - Visual Design",
+    };
+  },
 };

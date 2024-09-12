@@ -1,0 +1,5 @@
+{
+  "index": { "title": "Home", "type": "page", "display": "hidden" },
+  "motion": { "title": "Motion", "type": "page" },
+  "chart": { "title": "Chart", "type": "page" }
+}
